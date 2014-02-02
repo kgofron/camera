@@ -14,3 +14,9 @@ Push an existing repository from the command line
 git remote add origin https://github.com/kgofron/camera.git
 git push -u origin master
 
+----------------
+
+Change author
+git commit --amend --author="Author Name <email@address.com>"
+
+-------
