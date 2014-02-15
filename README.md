@@ -9,7 +9,7 @@ Make sure to set the date/time
 sudo date -s"2014-2-15 18:12:25"
 
 -------------------
-setup cron 
+setup cron (user kaz configuration is in /var/spool/cron/crontabs/kaz )
 >crontab -e
 # m h  dom mon dow   command
 
