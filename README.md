@@ -19,3 +19,6 @@ EXAMPLE1 (every minute)
 EXAMPLE2 (every day at 12:20 am)
 20 0 * * * /home/kaz/Documents/swdev/Camera/IXS/TEST/newImgSequence.sh
 
+EXAMPLE3 (BeagleBone Black)
+# 30 * * * *    /usr/bin/ntpdate-sync silent
+*/1 * * * * /usr/local/bin/newImgSequence.sh
