@@ -1,0 +1,4 @@
+# 30 * * * *    /usr/bin/ntpdate-sync silent
+# */1 * * * * /usr/local/bin/newImgSequence.sh
+55 23 * * * /usr/local/bin/newImgSequence.sh
+
