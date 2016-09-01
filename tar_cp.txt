@@ -1,0 +1,13 @@
+ssh user@machine-where-precious-data-is "tar czpf - /some/important/data" | tar xzpf - -C /new/root/directory
+
+tar cpf - /some/important/data | ssh user@destination-machine "tar xpf - -C /some/directory/"
+===========
+way to monitor transfer
+apt-get install pv
+ssh user@machine-where-precious-data-is "tar czpf - /some/important/data" | pv | tar xzpf - -C /new/root/directory
+
+ install pipemeter (alternatives: pipebench, pipeworks)
+ssh -C [host] "tar cp [src]"|pipemeter|tar xpf - -C [dest]
+
+================
+EXAMPLES:
