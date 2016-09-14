@@ -11,3 +11,10 @@ ssh -C [host] "tar cp [src]"|pipemeter|tar xpf - -C [dest]
 
 ================
 EXAMPLES:
+# exclude disk to which it is copied.
+
+tar --exclude='media' --exclude='cf-update' --exclude='direct' --exclude='lost+found' --exclude='proc'  -cf - * |
+ (cd /media/9c7ab425-56b4-4890-8dd4-281174ddb74f/xf03idc-ws1; tar -xpf -)
+
+
+tar -cf - tar_cp.txt | ssh kgofron@xf10id-srv1 'tar -xf - -C /IXS/kaz/.'
