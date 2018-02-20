@@ -1,0 +1,6 @@
+On linux, remove the ^M characters created by Windows editor.
+
+sed -i 's/^M//' filename.txt
+
+While typing `^M` in the command, do not use `shift+6 & M`.
+You should use `ctrl+v+m`.
