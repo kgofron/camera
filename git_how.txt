@@ -23,3 +23,8 @@
  2073  git push --force origin master
  2074  git checkout nsls2
  2075  gitk
+ 
+ #update one ADPluginEdge submodule
+ # check .gitmodule file for module name
+ git submodule update --init --remote ADPluginEdge
+ 
