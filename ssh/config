@@ -1,0 +1,72 @@
+Host *
+   User kgofron
+   ForwardAgent yes
+   ForwardX11 yes
+
+Host xf11id-ws1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10id-ws1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10id-ws2
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10id-ws3
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10id-ws5
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10id-ca1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10id-srv1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10idb-ioc1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf10idd-ioc1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+  
+Host xf18ida-ioc1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf18idb-ioc1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf18id-srv1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf18id-srv2
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf18id-ws1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf18id-ws2
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host 10.10.0.8
+  User kaz
+  ProxyCommand ssh kgofron@box64-3.nsls2.bnl.gov nc %h %p
+
+Host 10.10.0.14
+  User lambda
+  ProxyCommand ssh kgofron@box64-3.nsls2.bnl.gov nc %h %p
