@@ -21,3 +21,5 @@ tar -cf - tar_cp.txt | ssh kgofron@xf10id-srv1 'tar -xf - -C /IXS/kaz/.'
 sudo tar -cf - epics | tar -xf - -C /IXS/kaz/backup/.
 
 tar -cf - 28id | ssh kgofron@xf28id1-ioc2 'tar -xf - -C /home/kgofron/.'
+====
+ssh bcda1@mercury "tar -cf - /net/s100dserv/xorApps/zed" | gzip > zed.tar.gz
