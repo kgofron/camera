@@ -1,0 +1,4 @@
+
+scp -o "ProxyCommand ssh -W %h:%p box64-3" envPaths    kgofron@toolbox4.bnl.gov:/home/kgofron/epics/bundle/Deb9/.
+
+xf10id-ws1>ssh -o "ProxyCommand ssh -W %h:%p box64-3" -Y kgofron@toolbox4.bnl.gov
