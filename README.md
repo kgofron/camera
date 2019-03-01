@@ -9,7 +9,7 @@ Processing images using python, and ffmpeg (..)
 Make sure to set the date/time
 sudo date -s"2014-2-15 18:12:25"
 
--------------------
+
 setup cron (user kaz configuration is in /var/spool/cron/crontabs/kaz )
 >crontab -e
 {# m h  dom mon dow   command}
@@ -23,7 +23,8 @@ EXAMPLE2 (every day at 12:20 am)
 EXAMPLE3 (BeagleBone Black)
 {# 30 * * * *    /usr/bin/ntpdate-sync silent}
 */1 * * * * /usr/local/bin/newImgSequence.sh
-=======================
+
+
 ID28 picture location:
 kgofron@xf28id1-ws1:/nsls2/xf28id1/Cameras/xpd-cam1
 
