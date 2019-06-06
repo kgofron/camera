@@ -8,7 +8,13 @@ ssh user@machine-where-precious-data-is "tar czpf - /some/important/data" | pv |
 
  install pipemeter (alternatives: pipebench, pipeworks)
 ssh -C [host] "tar cp [src]"|pipemeter|tar xpf - -C [dest]
-
++++++++++++++
+usr@xf10idd-ioc1:~$ sudo du -Sx /var | sort -nr | tee  /tmp/du.var|less -XMi crap... no space on var for sudo log :(
+hrm... looks like doing a sudo tar pipe like this ends up dumping all the data into the sudolog!!! :(
+=================================
+A different way...  perhaps something like:
+sudo bash -c "tar cf - [src] | tar -C [dest] -xf -"
+which would have the added benefit of root on the recieving side being able to fully preserve perms/owner/group/etc
 ================
 EXAMPLES:
 # exclude disk to which it is copied.
