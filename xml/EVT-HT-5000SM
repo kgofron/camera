@@ -1,0 +1,1970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ***************************************** -->
+<!-- GenICam XML File for HR5000S-M            -->
+<!--                                           -->
+<!-- ***************************************** -->
+<RegisterDescription xmlns="http://www.genicam.org/GenApi/Version_1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" MajorVersion="1" MinorVersion="3" SubMinorVersion="0" VersionGuid="AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE" VendorName="Emergent" ModelName="HR5000S_M" ToolTip="Emergent Vision Technologies Camera Interface" ProductGuid="11111111-2222-3333-4444-555555555555" SchemaMajorVersion="1" SchemaMinorVersion="0" SchemaSubMinorVersion="1" StandardNameSpace="GEV" xsi:schemaLocation="http://www.genicam.org/GenApi/Version_1_0 .\GenApiSchema_Version_1_0.xsd">
+  <Group Comment="RootCategory">
+    <Category Name="Root" NameSpace="Standard">   
+      <pFeature>DeviceInformation</pFeature>
+      <pFeature>ImageFormatControl</pFeature>
+      <pFeature>AcquisitionControl</pFeature>
+      <pFeature>AnalogControl</pFeature>
+      <pFeature>TransportLayerControl</pFeature>
+      <pFeature>GPIO</pFeature>
+    </Category>
+  </Group>
+  <Group Comment="SubCategories">
+    <Category Name="DeviceInformation" NameSpace="Standard">
+      <!-- Recommended element -->
+      <ToolTip>Category for Device information.</ToolTip>
+      <Description>Category for Device information.</Description>
+      <DisplayName>Device Information</DisplayName>
+      <ImposedAccessMode>RO</ImposedAccessMode>
+      <pFeature>DeviceVendorName</pFeature>
+      <pFeature>DeviceModelName</pFeature>
+      <pFeature>DeviceVersion</pFeature>
+      <pFeature>DeviceSerialNumber</pFeature>
+      <pFeature>DeviceFirmwareVersion</pFeature>
+      <pFeature>DeviceUserName</pFeature>
+      <pFeature>SensTemp</pFeature>
+      <pFeature>UserSetFlashUpdate</pFeature>
+      <pFeature>UserSet</pFeature>
+      <pFeature>UserSetSelFlashUpdate</pFeature>
+    </Category>
+    <Category Name="ImageFormatControl" NameSpace="Standard">
+      <!-- Recommended element -->
+      <ToolTip>Category for Image Format Control features.</ToolTip>
+      <Description>Category for Image Format Control features.</Description>
+      <DisplayName>Image Format Control</DisplayName>
+      <pFeature>Width</pFeature>
+      <pFeature>Height</pFeature>
+      <pFeature>PixelFormat</pFeature>
+      <pFeature>OffsetX</pFeature>
+      <pFeature>OffsetY</pFeature>
+      <pFeature>Iris</pFeature>
+      <pFeature>Focus</pFeature>
+      <pFeature>MetadataEn</pFeature>
+    </Category>
+    <Category Name="AcquisitionControl" NameSpace="Standard">
+      <!-- Recommended element -->
+      <ToolTip>Category for the acquisition and trigger control features.</ToolTip>
+      <Description>Category for the acquisition and trigger control features.</Description>
+      <DisplayName>Acquisition Control</DisplayName>
+      <pFeature>AcquisitionMode</pFeature>
+      <pFeature>AcquisitionStart</pFeature>
+      <pFeature>AcquisitionStop</pFeature>
+      <pFeature>TriggerSelector</pFeature>
+      <pFeature>TriggerMode</pFeature>
+      <pFeature>TriggerSoftware</pFeature>
+      <pFeature>TriggerSource</pFeature>
+      <pFeature>Exposure</pFeature>
+      <pFeature>AutoExposure</pFeature>
+      <pFeature>AutoExpSet</pFeature>
+      <pFeature>AutoExpIGain</pFeature>
+      <pFeature>FrameRate</pFeature>
+      <pFeature>FrameRatemHz</pFeature>
+      <pFeature>LineTime</pFeature> 
+      <pFeature>AcquisitionFrameCount</pFeature>
+      <pFeature>Sync</pFeature>
+      <pFeature>SyncOffset</pFeature>
+    </Category>
+    <Category Name="AnalogControl" NameSpace="Standard">
+      <!-- Optional element -->
+      <ToolTip>Category that contains the Analog control features.</ToolTip>
+      <Description>Category that contains the Analog control features.</Description>
+      <DisplayName>Analog Control</DisplayName>
+      <pFeature>Gain</pFeature>
+      <pFeature>PGAGain</pFeature>
+      <pFeature>Offset</pFeature>
+      <pFeature>AutoGain</pFeature>
+      <pFeature>AutoGainSet</pFeature>
+      <pFeature>AutoGainIGain</pFeature>
+      <pFeature>LUTEnable</pFeature>
+      <pFeature>LUTIndex</pFeature>
+      <pFeature>LUTValue</pFeature>
+      <pFeature>AutoSizeX</pFeature>
+      <pFeature>AutoSizeY</pFeature>
+      <pFeature>AutoOffsetX</pFeature>
+      <pFeature>AutoOffsetY</pFeature>      
+    </Category>
+    <Category Name="TransportLayerControl" NameSpace="Standard">
+      <!-- Recommended element -->
+      <ToolTip>Category that contains the Transport layer control features.</ToolTip>
+      <Description>Category that contains the Transport layer control features.</Description>
+      <DisplayName>Transport Layer Control</DisplayName>
+      <pFeature>PayloadSize</pFeature>
+      <pFeature>GevSCPSDoNotFragment</pFeature>
+      <pFeature>GevSCPSBigEndian</pFeature>
+      <pFeature>GevSCPSPacketSize</pFeature>
+      <pFeature>TLParamsLocked</pFeature>
+      <pFeature>HBTimeout</pFeature>
+      <pFeature>HBDisable</pFeature>
+      <pFeature>GevTimestampTickFrequencyHigh</pFeature>
+      <pFeature>GevTimestampTickFrequencyLow</pFeature>
+      <pFeature>GevTimestampControlLatch</pFeature>
+      <pFeature>GevTimestampControlReset</pFeature>
+      <pFeature>GevTimestampValueHigh</pFeature>
+      <pFeature>GevTimestampValueLow</pFeature>
+    </Category>
+    <Category Name="GPIO" NameSpace="Standard">
+      <!-- Optional element -->
+      <ToolTip>Category that contains the GPIO control features.</ToolTip>
+      <Description>Category that contains the GPIO control features.</Description>
+      <DisplayName>GPIO Control</DisplayName>
+      <pFeature>GPO_0_Mode</pFeature>
+      <pFeature>GPO_0_Polarity</pFeature>
+      <pFeature>GPO_1_Mode</pFeature>
+      <pFeature>GPO_1_Polarity</pFeature>
+      <pFeature>GPO_2_Mode</pFeature>
+      <pFeature>GPO_2_Polarity</pFeature>
+      <pFeature>GPO_3_Mode</pFeature>
+      <pFeature>GPO_3_Polarity</pFeature>
+      <pFeature>GPI_4_Polarity</pFeature>
+      <pFeature>GPI_5_Polarity</pFeature>
+      <pFeature>GPI_Start_Exp_Mode</pFeature>
+      <pFeature>GPI_Start_Exp_Event</pFeature>
+      <pFeature>GPI_End_Exp_Mode</pFeature>
+      <pFeature>GPI_End_Exp_Event</pFeature>
+      <pFeature>GPI_4_Debounce_Count</pFeature>
+      <pFeature>GPI_5_Debounce_Count</pFeature>
+      <pFeature>Trigger_Delay</pFeature>
+      <pFeature>TG_Frame_Time</pFeature>
+      <pFeature>TG_High_Time</pFeature>
+      <pFeature>UartEnable</pFeature>
+      <pFeature>UartBaud</pFeature>
+      <pFeature>UartDataBits</pFeature>
+      <pFeature>UartStopBits</pFeature>
+      <pFeature>UartTxData</pFeature>
+      <pFeature>UartTxFifoCnt</pFeature>
+      <pFeature>UartRxData</pFeature>
+      <pFeature>UartRxFifoCnt</pFeature>
+    </Category>
+  </Group>
+  <!-- ***************************************** -->
+  <!-- ROOT SUB-CATEGORY DETAILED                -->
+  <!--                                           -->
+  <!-- ***************************************** -->
+  <!-- ***************************************** -->
+  <!-- ROOT SUB-CATEGORIES - ImageFormatControl  -->
+  <!--                                           -->
+  <!-- ***************************************** -->
+  <Group Comment="ImageFormatControl">
+    <IntSwissKnife Name="X_RES">
+      <Formula>2448</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="Y_RES">
+      <Formula>2048</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="GVSP_PIX_MONO8_VAL">
+      <Formula>0x01080001</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="GVSP_PIX_MONO10_VAL">
+      <Formula>0x01100003</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="GVSP_PIX_MONO10_PACKED_VAL">
+      <Formula>0x010C0004</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="GVSP_PIX_MONO12_VAL">
+      <Formula>0x01100005</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="GVSP_PIX_MONO12_PACKED_VAL">
+      <Formula>0x010C0006</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="SUBS_1X1_VAL">
+      <Formula>0</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="SUBS_2X2_VAL">
+      <Formula>1</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="SUBS_4X4_VAL">
+      <Formula>2</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="SUBS_8X8_VAL">
+      <Formula>3</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="LT_PARAM">
+      <pVariable Name="CURWIDTH">pWidthReg</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>(CURWIDTH*SUBS*150*100000)/9000</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="MODEL_PARAM">
+      <Formula>47</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="LT_CUTOVER_FACTOR">
+      <Formula>100</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="BIT_DEPTH">
+      <pVariable Name="CURPIXFORMAT">pPixelFormatReg</pVariable>
+      <pVariable Name="GVSP_PIX_MONO10">GVSP_PIX_MONO10_VAL</pVariable>
+      <pVariable Name="GVSP_PIX_MONO10_PACKED">GVSP_PIX_MONO10_PACKED_VAL</pVariable>
+      <pVariable Name="GVSP_PIX_MONO12">GVSP_PIX_MONO12_VAL</pVariable>
+      <pVariable Name="GVSP_PIX_MONO12_PACKED">GVSP_PIX_MONO12_PACKED_VAL</pVariable>
+      <Formula>((CURPIXFORMAT = GVSP_PIX_MONO12) || (CURPIXFORMAT = GVSP_PIX_MONO12_PACKED)) ? 12 : ((CURPIXFORMAT = GVSP_PIX_MONO10) || (CURPIXFORMAT = GVSP_PIX_MONO10_PACKED) ? 10 : 8)</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="GAIN_MAX">
+      <pVariable Name="BD">BIT_DEPTH</pVariable>
+      <Formula>(BD = 8) ? 2047 : 8191</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="MIN_LINE_COUNTS">
+      <pVariable Name="BD">BIT_DEPTH</pVariable>
+      <Formula>(BD = 8) ? 438 : ((BD = 10) ? 494 : 800)</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="WIDTH_MAX">
+      <pVariable Name="CUROFFSETX">pOffsetXReg</pVariable>
+      <pVariable Name="X_R">X_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>X_R/SUBS - CUROFFSETX</Formula>
+    </IntSwissKnife>    
+    <IntSwissKnife Name="WIDTH_INC">
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>128 / SUBS</Formula>
+    </IntSwissKnife>
+    <Integer Name="Width">
+      <ToolTip>Image width (in pixels).</ToolTip>
+      <Description>Image width (in pixels).</Description>
+      <DisplayName>Width</DisplayName>
+      <pValue>pWidthReg</pValue>
+      <pMin>WIDTH_INC</pMin>
+      <pMax>WIDTH_MAX</pMax>
+      <pInc>WIDTH_INC</pInc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pWidthReg">
+      <Address>0xA000</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pSubSampleReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="HEIGHT_MAX">
+      <pVariable Name="CUROFFSETY">pOffsetYReg</pVariable>
+      <pVariable Name="Y_R">Y_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>Y_R/SUBS - CUROFFSETY</Formula>
+    </IntSwissKnife>
+    <Integer Name="Height">
+      <ToolTip>Image height (in pixels).</ToolTip>
+      <Description>Image height (in pixels).</Description>
+      <DisplayName>Height</DisplayName>
+      <pValue>pHeightReg</pValue>
+      <Min>4</Min>
+      <pMax>HEIGHT_MAX</pMax>
+      <Inc>4</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pHeightReg">
+      <Address>0xA004</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pSubSampleReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="PixelFormat">
+      <ToolTip>Pixel Format</ToolTip>
+      <Description>Pixel Format</Description>
+      <DisplayName>Pixel Format</DisplayName>
+      <EnumEntry Name="Mono8">
+        <Value>0x01080001</Value>
+      </EnumEntry>
+      <EnumEntry Name="Mono10">
+        <Value>0x01100003</Value>
+      </EnumEntry>
+      <EnumEntry Name="Mono10Packed">
+        <Value>0x010C0004</Value>
+      </EnumEntry>
+      <EnumEntry Name="Mono12">
+        <Value>0x01100005</Value>
+      </EnumEntry>
+      <EnumEntry Name="Mono12Packed">
+        <Value>0x010C0006</Value>
+      </EnumEntry>
+      <pValue>pPixelFormatReg</pValue>
+    </Enumeration>
+    <IntReg Name="pPixelFormatReg">
+      <Address>0xA008</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="OFFSET_X_MAX">
+      <pVariable Name="CURWIDTH">pWidthReg</pVariable>
+      <pVariable Name="X_R">X_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>X_R/SUBS - CURWIDTH</Formula>
+    </IntSwissKnife>
+    <Integer Name="OffsetX">
+      <ToolTip>Image horizontal offset (in pixels).</ToolTip>
+      <Description>Image horizontal offset (in pixels).</Description>
+      <DisplayName>Offset X</DisplayName>
+      <pValue>pOffsetXReg</pValue>
+      <Min>0</Min>
+      <pMax>OFFSET_X_MAX</pMax>
+      <pInc>WIDTH_INC</pInc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pOffsetXReg">
+      <Address>0xA00C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pSubSampleReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="OFFSET_Y_MAX">
+      <pVariable Name="CURHEIGHT">pHeightReg</pVariable>
+      <pVariable Name="Y_R">Y_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>Y_R/SUBS - CURHEIGHT</Formula>
+    </IntSwissKnife>
+    <Integer Name="OffsetY">
+      <ToolTip>Image vertical offset (in pixels).</ToolTip>
+      <Description>Image vertical offset (in pixels).</Description>
+      <DisplayName>Offset Y</DisplayName>
+      <pValue>pOffsetYReg</pValue>
+      <Min>0</Min>
+      <pMax>OFFSET_Y_MAX</pMax>
+      <Inc>4</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pOffsetYReg">
+      <Address>0xA010</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pSubSampleReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="SubSample">
+      <ToolTip>Sub Sample</ToolTip>
+      <Description>Sub Sample</Description>
+      <DisplayName>Sub Sample</DisplayName>
+      <EnumEntry Name="SUBS_1X1">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="SUBS_2X2">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="SUBS_4X4">
+        <Value>2</Value>
+      </EnumEntry>
+      <EnumEntry Name="SUBS_8X8">
+        <Value>3</Value>
+      </EnumEntry>
+      <pValue>pSubSampleReg</pValue>
+    </Enumeration>
+    <IntReg Name="pSubSampleReg">
+      <Address>0xA020</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="Iris">
+      <ToolTip>Iris</ToolTip>
+      <Description>Iris</Description>
+      <DisplayName>Iris</DisplayName>
+      <pValue>IrisReg</pValue>
+      <Min>0</Min>
+      <Max>99</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="IrisReg">
+      <Address>0xF090</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="Focus">
+      <ToolTip>Focus</ToolTip>
+      <Description>Focus</Description>
+      <DisplayName>Focus</DisplayName>
+      <pValue>FocusReg</pValue>
+      <Min>0</Min>
+      <Max>16383</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="FocusReg">
+      <Address>0xF094</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="MetadataEn">
+      <ToolTip>MetadataEn</ToolTip>
+      <Description>MetadataEn</Description>
+      <DisplayName>MetadataEn</DisplayName>
+      <pValue>MetadataEnReg</pValue>
+    </Boolean>
+    <IntReg Name="MetadataEnReg">
+      <Address>0xF0BC</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="FlipH">
+      <ToolTip>FlipH</ToolTip>
+      <Description>FlipH</Description>
+      <DisplayName>FlipH</DisplayName>
+      <pValue>FlipHReg</pValue>
+    </Boolean>
+    <IntReg Name="FlipHReg">
+      <Address>0xA018</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="FlipV">
+      <ToolTip>FlipV</ToolTip>
+      <Description>FlipV</Description>
+      <DisplayName>FlipV</DisplayName>
+      <pValue>FlipVReg</pValue>
+    </Boolean>
+    <IntReg Name="FlipVReg">
+      <Address>0xA01C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+  </Group>
+  <!-- ***************************************** -->
+  <!-- ROOT SUB-CATEGORIES - AcquisitionControl  -->
+  <!--                                           -->
+  <!-- ***************************************** -->
+  <Group Comment="AcquisitionControl">
+    <Enumeration Name="AcquisitionMode">
+      <ToolTip>Acquisition Mode</ToolTip>
+      <Description>Acquisition Mode</Description>
+      <DisplayName>Acquisition Mode</DisplayName>
+      <EnumEntry Name="Continuous">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="MultiFrame">
+        <Value>1</Value>
+      </EnumEntry>
+      <pValue>AcquisitionModeReg</pValue>
+    </Enumeration>
+    <IntReg Name="AcquisitionModeReg">
+      <Address>0xB000</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Command Name="AcquisitionStart">
+      <ToolTip>Start Acquisition</ToolTip>
+      <Description>Start Acquisition</Description>
+      <DisplayName>Acquisition Start</DisplayName>
+      <pValue>AcquisitionStartReg</pValue>
+      <CommandValue>1</CommandValue>
+    </Command>
+    <IntReg Name="AcquisitionStartReg">
+      <Address>0xB004</Address>
+      <Length>4</Length>
+      <AccessMode>WO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Command Name="AcquisitionStop">
+      <ToolTip>Stop Acquisition</ToolTip>
+      <Description>Stop Acquisition</Description>
+      <DisplayName>Acquisition Stop</DisplayName>
+      <pValue>AcquisitionStopReg</pValue>
+      <CommandValue>1</CommandValue>
+    </Command>
+    <IntReg Name="AcquisitionStopReg">
+      <Address>0xB008</Address>
+      <Length>4</Length>
+      <AccessMode>WO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="TriggerSelector">
+      <ToolTip>Trigger Selector</ToolTip>
+      <Description>Trigger Selector</Description>
+      <DisplayName>Trigger Selector</DisplayName>
+      <EnumEntry Name="AcquisitionStart">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="FrameStart">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="LineStart">
+        <Value>2</Value>
+      </EnumEntry>
+      <pValue>TriggerSelectorVal</pValue>
+    </Enumeration>
+    <Integer Name="TriggerSelectorVal">
+      <Value>0</Value>
+      <Min>0</Min>
+      <Max>2</Max>
+    </Integer>
+    <Enumeration Name="TriggerMode">
+      <ToolTip>Trigger mode</ToolTip>
+      <Description>Trigger mode</Description>
+      <DisplayName>Trigger Mode</DisplayName>
+      <EnumEntry Name="Off">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="On">
+        <Value>1</Value>
+      </EnumEntry>
+      <pValue>TriggerModeReg</pValue>
+    </Enumeration>
+    <IntReg Name="TriggerModeReg">
+      <Address>0xB00C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Command Name="TriggerSoftware">
+      <ToolTip>Acquisition start in software trigger mode</ToolTip>
+      <Description>Acquisition start in software trigger mode</Description>
+      <DisplayName>Trigger Software</DisplayName>
+      <pValue>TriggerSoftwareReg</pValue>
+      <CommandValue>1</CommandValue>
+    </Command>
+    <IntReg Name="TriggerSoftwareReg">
+      <Address>0xB028</Address>
+      <Length>4</Length>
+      <AccessMode>WO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="TriggerSource">
+      <ToolTip>Trigger Source</ToolTip>
+      <Description>Trigger Source</Description>
+      <DisplayName>Trigger Source</DisplayName>
+      <EnumEntry Name="Software">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="Hardware">
+        <Value>1</Value>
+      </EnumEntry>
+      <pValue>TriggerSourceReg</pValue>
+    </Enumeration>
+    <IntReg Name="TriggerSourceReg">
+      <Address>0xB02C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="Exposure">
+      <ToolTip>Absolute exposure in us</ToolTip>
+      <Description>Absolute exposure in us.</Description>
+      <DisplayName>Exposure</DisplayName>
+      <pValue>pExposureReg</pValue>
+      <Min>1</Min>
+      <pMax>EXPOSURE_MAX</pMax>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pExposureReg">
+      <Address>0xB010</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>TriggerSourceReg</pInvalidator>
+      <pInvalidator>AutoExposureReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="EXPOSURE_MAX">   
+      <pVariable Name="CURFRAMERATE">pFrameRatemHzReg</pVariable>
+      <pVariable Name="M_P">MODEL_PARAM</pVariable>
+      <pVariable Name="TRIGGERSRC">TriggerSourceReg</pVariable>
+      <pVariable Name="LT">pLineTimeReg</pVariable>
+      <Formula>(TRIGGERSRC = 0) ? ((((1000000000/CURFRAMERATE)-((M_P*LT)/150)) &gt; 1000000) ? 1000000 : ((1000000000/CURFRAMERATE)-((M_P*LT)/150))) : 1000000</Formula>
+    </IntSwissKnife>
+    <Boolean Name="AutoExposure">
+      <ToolTip>Enables Auto Exposure</ToolTip>
+      <Description>Enables Auto Exposure</Description>
+      <DisplayName>Auto Exposure</DisplayName>
+      <pValue>AutoExposureReg</pValue>
+    </Boolean>
+    <IntReg Name="AutoExposureReg">
+      <Address>0xB040</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="AutoExpSet">
+      <ToolTip>Set Auto Exp Set Point</ToolTip>
+      <Description>Set Auto Exp Set Point</Description>
+      <DisplayName>Auto Exp Set Point</DisplayName>
+      <pValue>AutoExpSetReg</pValue>
+      <Min>0</Min>
+      <Max>1023</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoExpSetReg">
+      <Address>0xB048</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="AutoExpIGain">
+      <ToolTip>Auto Exp Rate</ToolTip>
+      <Description>Auto Exp Rate</Description>
+      <DisplayName>Auto Exp Rate</DisplayName>
+      <pValue>AutoExpIGainReg</pValue>
+      <Min>1</Min>
+      <Max>127</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoExpIGainReg">
+      <Address>0xB04C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="FrameRate">
+      <ToolTip>Set frame rate </ToolTip>
+      <Description>Set frame rate.</Description>
+      <DisplayName>Frame Rate</DisplayName>
+      <pValue>pFrameRateReg</pValue>
+      <Min>1</Min>
+      <pMax>FRAME_RATE_MAX</pMax>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pFrameRateReg">
+      <Address>0xB014</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pPixelFormatReg</pInvalidator>
+      <pInvalidator>pWidthReg</pInvalidator>
+      <pInvalidator>pHeightReg</pInvalidator>
+      <pInvalidator>pFrameRatemHzReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="FrameRatemHz">
+      <ToolTip>Set frame rate mHz</ToolTip>
+      <Description>Set frame rate mHz.</Description>
+      <DisplayName>Frame Rate mHz</DisplayName>
+      <pValue>pFrameRatemHzReg</pValue>
+      <Min>1</Min>
+      <pMax>FRAME_RATE_MAX_MHZ</pMax>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pFrameRatemHzReg">
+      <Address>0xB044</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pPixelFormatReg</pInvalidator>
+      <pInvalidator>pWidthReg</pInvalidator>
+      <pInvalidator>pHeightReg</pInvalidator>
+      <pInvalidator>pFrameRateReg</pInvalidator>      
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="LineTime">
+      <ToolTip>Set line time</ToolTip>
+      <Description>Set line time.</Description>
+      <DisplayName>Line Time</DisplayName>
+      <pValue>pLineTimeReg</pValue>
+      <pMin>LINE_COUNTS_MIN2</pMin>
+      <pMax>LINE_COUNTS_MAX</pMax>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pLineTimeReg">
+      <Address>0xB03C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pFrameRateReg</pInvalidator>
+      <pInvalidator>pPixelFormatReg</pInvalidator>
+      <pInvalidator>pWidthReg</pInvalidator>
+      <pInvalidator>pHeightReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="SUBS_PARAM">
+      <pVariable Name="SUBSAMPLE">pSubSampleReg</pVariable>
+      <pVariable Name="SUBS_1X1">SUBS_1X1_VAL</pVariable>
+      <pVariable Name="SUBS_2X2">SUBS_2X2_VAL</pVariable>
+      <pVariable Name="SUBS_4X4">SUBS_4X4_VAL</pVariable>
+      <Formula>(SUBSAMPLE = SUBS_1X1) ? 1 : ((SUBSAMPLE = SUBS_2X2) ? 2 : ((SUBSAMPLE = SUBS_4X4) ? 4 : 8))</Formula>
+    </IntSwissKnife>    
+    <IntSwissKnife Name="LINE_COUNTS_MIN">
+      <pVariable Name="CURPIXFORMAT">pPixelFormatReg</pVariable>
+      <pVariable Name="LT_P">LT_PARAM</pVariable>
+      <pVariable Name="MLC">MIN_LINE_COUNTS</pVariable>
+      <pVariable Name="GVSP_PIX_MONO8">GVSP_PIX_MONO8_VAL</pVariable>
+      <pVariable Name="GVSP_PIX_MONO10">GVSP_PIX_MONO10_VAL</pVariable>
+      <pVariable Name="GVSP_PIX_MONO12">GVSP_PIX_MONO12_VAL</pVariable>
+      <Formula>(CURPIXFORMAT = GVSP_PIX_MONO8) ? MLC : (((CURPIXFORMAT = GVSP_PIX_MONO10) || (CURPIXFORMAT = GVSP_PIX_MONO12)) ? (LT_P*16)/100000 : (LT_P*12)/100000)</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="LINE_COUNTS_MIN2">
+      <pVariable Name="LCM">LINE_COUNTS_MIN</pVariable>
+      <pVariable Name="MLC">MIN_LINE_COUNTS</pVariable>
+      <Formula>(LCM &gt; MLC) ? LCM : MLC</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="LINE_COUNTS_MAX">
+      <pVariable Name="LT">LINE_COUNTS_MIN2</pVariable>
+      <pVariable Name="CURFRAMERATE">pFrameRateReg</pVariable>
+      <pVariable Name="M_P">MODEL_PARAM</pVariable>
+      <pVariable Name="CURHEIGHT">pHeightReg</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>(LT &gt; ((150000000/CURFRAMERATE)/(CURHEIGHT*SUBS+M_P))) ? LT : ((150000000000/CURFRAMERATE)/(CURHEIGHT*SUBS+M_P))</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="FRAME_RATE_MAX_PRE">
+      <pVariable Name="LT">LINE_COUNTS_MIN2</pVariable>
+      <pVariable Name="M_P">MODEL_PARAM</pVariable>
+      <pVariable Name="CURHEIGHT">pHeightReg</pVariable>
+      <pVariable Name="MLC">MIN_LINE_COUNTS</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>(LT &gt; MLC/100) ? (150000000/(LT*(CURHEIGHT*SUBS+M_P))) : (150000000/(MLC*(CURHEIGHT*SUBS+M_P)))</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="FRAME_RATE_MAX">
+      <pVariable Name="CUREXPOSURE">pExposureReg</pVariable>
+      <pVariable Name="M_P">MODEL_PARAM</pVariable>
+      <pVariable Name="FR_MAX_PRE">FRAME_RATE_MAX_PRE</pVariable>
+      <pVariable Name="TRIGGERSRC">TriggerSourceReg</pVariable>
+      <pVariable Name="LT">pLineTimeReg</pVariable>
+      <Formula>(TRIGGERSRC = 0) ? ((CUREXPOSURE &gt; ((1000000/FR_MAX_PRE)-((M_P*LT)/150))) ? (1000000/(((M_P*LT)/150)+CUREXPOSURE)) : (FR_MAX_PRE)) : (FR_MAX_PRE)</Formula>
+    </IntSwissKnife>
+    <IntSwissKnife Name="FRAME_RATE_MAX_MHZ">
+      <pVariable Name="FRMAX">FRAME_RATE_MAX</pVariable>
+      <Formula>FRMAX*1000</Formula>
+    </IntSwissKnife>
+    <Integer Name="AcquisitionFrameCount">
+      <ToolTip>Set number of frames to capture for MultiFrame Acq mode </ToolTip>
+      <Description>Set number of frames to capture.</Description>
+      <DisplayName>Acquisition Frame Count</DisplayName>
+      <pValue>pAcquisitionFrameCountReg</pValue>
+      <Min>1</Min>
+      <Max>1000</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="pAcquisitionFrameCountReg">
+      <Address>0xB01C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Command Name="Sync">
+      <ToolTip>Updates the device exposure counter with Sync Offset</ToolTip>
+      <Description>Updates the device exposure counter with Sync Offset</Description>
+      <DisplayName>Sync</DisplayName>
+      <pValue>SyncReg</pValue>
+      <CommandValue>1</CommandValue>
+    </Command>
+    <IntReg Name="SyncReg">
+      <Address>0xB030</Address>
+      <Length>4</Length>
+      <AccessMode>WO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="SyncOffset">
+      <ToolTip>Set Sync Offset </ToolTip>
+      <Description>Set Sync Offset.</Description>
+      <DisplayName>Sync Offset</DisplayName>
+      <pValue>SyncOffsetReg</pValue>
+      <Min>0</Min>
+      <Max>50000000</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="SyncOffsetReg">
+      <Address>0xB034</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+  </Group>
+  <!-- ***************************************** -->
+  <!-- ROOT SUB-CATEGORIES - AnalogControl       -->
+  <!--                                           -->
+  <!-- ***************************************** -->
+  <Group Comment="AnalogControl">
+    <Integer Name="Gain">
+      <ToolTip>Set gain </ToolTip>
+      <Description>Set gain.</Description>
+      <DisplayName>Digital Gain</DisplayName>
+      <pValue>GainReg</pValue>
+      <Min>0</Min>
+      <pMax>GAIN_MAX</pMax>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="GainReg">
+      <Address>0xC000</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pPixelFormatReg</pInvalidator>
+      <pInvalidator>AutoGainReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="PGAGain">
+      <ToolTip>Set PGAGain</ToolTip>
+      <Description>Set PGAGain</Description>
+      <DisplayName>PGA Gain</DisplayName>
+      <pValue>PGAGainReg</pValue>
+      <Min>0</Min>
+      <Max>480</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="PGAGainReg">
+      <Address>0xFFA8</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="Offset">
+      <ToolTip>Set offset </ToolTip>
+      <Description>Set offset.</Description>
+      <DisplayName>Offset</DisplayName>
+      <pValue>OffsetReg</pValue>
+      <Min>0</Min>
+      <Max>1023</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="OffsetReg">
+      <Address>0xC004</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="AutoGain">
+      <ToolTip>Enables Auto Gain</ToolTip>
+      <Description>Enables Auto Gain</Description>
+      <DisplayName>Auto Gain</DisplayName>
+      <pValue>AutoGainReg</pValue>
+    </Boolean>
+    <IntReg Name="AutoGainReg">
+      <Address>0xC028</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="AutoGainSet">
+      <ToolTip>Set Auto Gain Set Point</ToolTip>
+      <Description>Set Auto Gain Set Point</Description>
+      <DisplayName>Auto Gain Set Point</DisplayName>
+      <pValue>AutoGainSetReg</pValue>
+      <Min>0</Min>
+      <Max>1023</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoGainSetReg">
+      <Address>0xC02C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+     <Integer Name="AutoGainIGain">
+      <ToolTip>Auto Gain Rate</ToolTip>
+      <Description>Auto Gain Rate</Description>
+      <DisplayName>Auto Gain Rate</DisplayName>
+      <pValue>AutoGainIGainReg</pValue>
+      <Min>1</Min>
+      <Max>127</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoGainIGainReg">
+      <Address>0xC034</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="LUTEnable">
+      <ToolTip>Enables LUT Table</ToolTip>
+      <Description>Enables the LUT Table.</Description>
+      <DisplayName>LUT Enable</DisplayName>
+      <pValue>LUTEnableReg</pValue>
+    </Boolean>
+    <IntReg Name="LUTEnableReg">
+      <Address>0xC008</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="LUTIndex">
+      <ToolTip>Set LUT Index</ToolTip>
+      <Description>Set LUT Index.</Description>
+      <DisplayName>LUT Index</DisplayName>
+      <pValue>LUTIndexReg</pValue>
+      <Min>0</Min>
+      <Max>4095</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="LUTIndexReg">
+      <Address>0xC00C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="LUTValue">
+      <ToolTip>Set LUT Value </ToolTip>
+      <Description>Set LUT Value.</Description>
+      <DisplayName>LUT Value</DisplayName>
+      <pValue>LUTValueReg</pValue>
+      <Min>0</Min>
+      <Max>4095</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="LUTValueReg">
+      <Address>0xC010</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="AUTO_WIDTH_MAX">
+      <pVariable Name="CUROFFSETX">AutoOffsetXReg</pVariable>
+      <pVariable Name="X_R">X_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>X_R/SUBS - CUROFFSETX</Formula>
+    </IntSwissKnife>    
+    <Integer Name="AutoSizeX">
+      <ToolTip>AutoSizeX</ToolTip>
+      <Description>AutoSizeX</Description>
+      <DisplayName>Auto Function SizeX</DisplayName>
+      <pValue>AutoSizeXReg</pValue>
+      <pMin>WIDTH_INC</pMin>
+      <pMax>AUTO_WIDTH_MAX</pMax>
+      <pInc>WIDTH_INC</pInc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoSizeXReg">
+      <Address>0xC078</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="AUTO_HEIGHT_MAX">
+      <pVariable Name="CUROFFSETY">AutoOffsetYReg</pVariable>
+      <pVariable Name="Y_R">Y_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>Y_R/SUBS - CUROFFSETY</Formula>
+    </IntSwissKnife>
+    <Integer Name="AutoSizeY">
+      <ToolTip>AutoSizeY</ToolTip>
+      <Description>AutoSizeY</Description>
+      <DisplayName>Auto Function SizeY</DisplayName>
+      <pValue>AutoSizeYReg</pValue>
+      <Min>4</Min>
+      <pMax>AUTO_HEIGHT_MAX</pMax>
+      <Inc>4</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoSizeYReg">
+      <Address>0xC07C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="AUTO_OFFSET_X_MAX">
+      <pVariable Name="CURWIDTH">AutoSizeXReg</pVariable>
+      <pVariable Name="X_R">X_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>X_R/SUBS - CURWIDTH</Formula>
+    </IntSwissKnife>    
+    <Integer Name="AutoOffsetX">
+      <ToolTip>AutoOffsetX</ToolTip>
+      <Description>AutoOffsetX</Description>
+      <DisplayName>Auto Function OffsetX</DisplayName>
+      <pValue>AutoOffsetXReg</pValue>
+      <Min>0</Min>
+      <pMax>AUTO_OFFSET_X_MAX</pMax>
+      <pInc>WIDTH_INC</pInc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoOffsetXReg">
+      <Address>0xC080</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <IntSwissKnife Name="AUTO_OFFSET_Y_MAX">
+      <pVariable Name="CURHEIGHT">AutoSizeYReg</pVariable>
+      <pVariable Name="Y_R">Y_RES</pVariable>
+      <pVariable Name="SUBS">SUBS_PARAM</pVariable>
+      <Formula>Y_R/SUBS - CURHEIGHT</Formula>
+    </IntSwissKnife>
+    <Integer Name="AutoOffsetY">
+      <ToolTip>AutoOffsetY</ToolTip>
+      <Description>AutoOffsetY</Description>
+      <DisplayName>Auto Function OffsetY</DisplayName>
+      <pValue>AutoOffsetYReg</pValue>
+      <Min>0</Min>
+      <pMax>AUTO_OFFSET_Y_MAX</pMax>
+      <Inc>4</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="AutoOffsetYReg">
+      <Address>0xC084</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+  </Group>
+  <!-- ***************************************** -->
+  <!-- ROOT SUB-CATEGORIES - SpecialFeatures     -->
+  <!--                                           -->
+  <!-- ***************************************** -->
+  <Group Comment="SpecialFeatures">
+    <Port Name="Device" NameSpace="Standard">
+      <!-- Mandatory element -->
+      <Visibility>Invisible</Visibility>
+      <ImposedAccessMode>RW</ImposedAccessMode>
+    </Port>
+  </Group>
+  <!-- ******************************************* -->
+  <!-- ROOT SUB-CATEGORIES - TransportLayerControl -->
+  <!--                                             -->
+  <!-- ******************************************* -->
+  <Group Comment="TransportLayerControl">
+    <Integer Name="PayloadSize">
+      <ToolTip>PayloadSize</ToolTip>
+      <Description>PayloadSize</Description>
+      <DisplayName>PayloadSize</DisplayName>
+      <pValue>PayloadSizeReg</pValue>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="PayloadSizeReg">
+      <Address>0xD008</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>pPixelFormatReg</pInvalidator>
+      <pInvalidator>pHeightReg</pInvalidator>
+      <pInvalidator>pWidthReg</pInvalidator>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="GevSCPSDoNotFragment">
+      <Visibility>Guru</Visibility>
+      <pValue>GevSCPSDoNotFragmentReg</pValue>
+    </Boolean>
+    <MaskedIntReg Name="GevSCPSDoNotFragmentReg" NameSpace="Custom">
+      <Visibility>Invisible</Visibility>
+      <Address>0xD04</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <LSB>1</LSB>
+      <MSB>1</MSB>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </MaskedIntReg>
+    <Boolean Name="GevSCPSBigEndian">
+      <Visibility>Guru</Visibility>
+      <pValue>GevSCPSBigEndianReg</pValue>
+    </Boolean>
+    <MaskedIntReg Name="GevSCPSBigEndianReg" NameSpace="Custom">
+      <Visibility>Invisible</Visibility>
+      <Address>0xD04</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <LSB>2</LSB>
+      <MSB>2</MSB>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </MaskedIntReg>
+    <Integer Name="GevSCPSPacketSize">
+      <ToolTip>GevSCPSPacketSize</ToolTip>
+      <Description>GevSCPSPacketSize</Description>
+      <DisplayName>Packet Size</DisplayName>
+      <pValue>GevSCPSPacketSizeReg</pValue>
+      <Min>1600</Min>
+      <Max>9000</Max>
+      <Inc>8</Inc>
+    </Integer>
+    <MaskedIntReg Name="GevSCPSPacketSizeReg" NameSpace="Custom">
+      <Address>0xD04</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <LSB>31</LSB>
+      <MSB>16</MSB>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </MaskedIntReg>
+    <Integer Name="TENG_SNR_Margin">
+      <ToolTip>SNR Margin on 10G Interface in 0.1dB.</ToolTip>
+      <Description>10G SNR Margin</Description>
+      <DisplayName>10G SNR Margin</DisplayName>
+      <pValue>TENGSNRMarginReg</pValue>
+      <Min>-200</Min>
+      <Max>200</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="TENGSNRMarginReg">
+      <Address>0xD000</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <PollingTime>10</PollingTime>
+      <Sign>Signed</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="TLParamsLocked">
+      <ToolTip> Indicates whether a live grab is under way</ToolTip>
+      <Visibility>Invisible</Visibility>
+      <Value>0</Value>
+      <Min>0</Min>
+      <Max>1</Max>
+    </Integer>
+    <Integer Name="HBTimeout">
+      <ToolTip>HBTimeout</ToolTip>
+      <Description>HBTimeout</Description>
+      <DisplayName>HBTimeout</DisplayName>
+      <pValue>HBTimeoutReg</pValue>
+      <Min>500</Min>
+      <Max>100000</Max>
+      <Inc>1</Inc>
+    </Integer>
+    <IntReg Name="HBTimeoutReg">
+      <Address>0x938</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="HBDisable">
+      <ToolTip>HBDisable</ToolTip>
+      <Description>HBDisable</Description>
+      <DisplayName>HBDisable</DisplayName>
+      <pValue>HBDisableReg</pValue>
+    </Boolean>
+    <MaskedIntReg Name="HBDisableReg">
+      <Address>0x954</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <LSB>31</LSB>
+      <MSB>31</MSB>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </MaskedIntReg>
+    <Command Name="GevTimestampControlLatch">
+      <ToolTip>Latch current timestamp value</ToolTip>
+      <Description>Latches the current timestamp value of the device.</Description>
+      <DisplayName>Latch Timestamp</DisplayName>
+      <pValue>BootStrap_GevTimestampControl</pValue>
+      <CommandValue>2</CommandValue>
+    </Command>	  
+    <Command Name="GevTimestampControlReset">
+      <ToolTip>Reset timestamp count</ToolTip>
+      <Description>Resets the timestamp count of the device.</Description>
+      <DisplayName>Reset Timestamp</DisplayName>
+      <pValue>BootStrap_GevTimestampControl</pValue>
+      <CommandValue>1</CommandValue>
+    </Command>	  
+    <IntReg Name="BootStrap_GevTimestampControl">
+      <Description>Timestamp Control Register</Description>
+      <Visibility>Invisible</Visibility>
+      <Address>0x944</Address>
+      <Length>4</Length>
+      <AccessMode>WO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>	  
+	<Integer Name="GevTimestampValueHigh">
+      <ToolTip>GevTimestampValueHigh</ToolTip>
+      <Description>GevTimestampValueHigh</Description>
+      <DisplayName>GevTimestampValueHigh</DisplayName>
+      <pValue>GevTimestampValueHighReg</pValue>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="GevTimestampValueHighReg">
+      <Address>0x0948</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>BootStrap_GevTimestampControl</pInvalidator>	  
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+	<Integer Name="GevTimestampValueLow">
+      <ToolTip>GevTimestampValueLow</ToolTip>
+      <Description>GevTimestampValueLow</Description>
+      <DisplayName>GevTimestampValueLow</DisplayName>
+      <pValue>GevTimestampValueLowReg</pValue>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="GevTimestampValueLowReg">
+      <Address>0x094C</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <pInvalidator>BootStrap_GevTimestampControl</pInvalidator>	  
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>	
+    <Integer Name="GevTimestampTickFrequencyHigh">
+      <ToolTip>GevTimestampTickFrequencyHigh</ToolTip>
+      <Description>GevTimestampTickFrequencyHigh</Description>
+      <DisplayName>GevTimestampTickFrequencyHigh</DisplayName>
+      <pValue>GevTimestampTickFrequencyHighReg</pValue>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="GevTimestampTickFrequencyHighReg">
+      <Address>0x093C</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="GevTimestampTickFrequencyLow">
+      <ToolTip>GevTimestampTickFrequencyLow</ToolTip>
+      <Description>GevTimestampTickFrequencyLow</Description>
+      <DisplayName>GevTimestampTickFrequencyLow</DisplayName>
+      <pValue>GevTimestampTickFrequencyLowReg</pValue>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="GevTimestampTickFrequencyLowReg">
+      <Address>0x0940</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>	
+  </Group>
+  <!-- ***************************************** -->
+  <!-- ROOT SUB-CATEGORIES - GPIO                -->
+  <!--                                           -->
+  <!-- ***************************************** -->
+  <Group Comment="GPIO">
+    <Enumeration Name="GPO_0_Mode">
+      <ToolTip>GPO_0_Mode</ToolTip>
+      <Description>GPO_0_Mode</Description>
+      <DisplayName>GPO 0 Mode</DisplayName>
+      <EnumEntry Name="Exposure">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="Readout">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="GPO">
+        <Value>2</Value>
+      </EnumEntry>
+      <EnumEntry Name="Test_Generator">
+        <Value>3</Value>
+      </EnumEntry>
+      <pValue>GPO_0_Mode_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPO_0_Mode_Reg">
+      <Address>0xE000</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="GPO_0_Polarity">
+      <ToolTip>Enables GPO Polarity</ToolTip>
+      <Description>Enables GPO Polarity.</Description>
+      <DisplayName>GPO 0 Polarity</DisplayName>
+      <pValue>GPO_0_Polarity_Reg</pValue>
+    </Boolean>
+    <IntReg Name="GPO_0_Polarity_Reg">
+      <Address>0xE004</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="GPO_1_Mode">
+      <ToolTip>GPO_1_Mode</ToolTip>
+      <Description>GPO_1_Mode</Description>
+      <DisplayName>GPO 1 Mode</DisplayName>
+      <EnumEntry Name="Exposure">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="Readout">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="GPO">
+        <Value>2</Value>
+      </EnumEntry>
+      <EnumEntry Name="Test_Generator">
+        <Value>3</Value>
+      </EnumEntry>
+      <pValue>GPO_1_Mode_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPO_1_Mode_Reg">
+      <Address>0xE008</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="GPO_1_Polarity">
+      <ToolTip>Enables GPO Polarity</ToolTip>
+      <Description>Enables GPO Polarity.</Description>
+      <DisplayName>GPO 1 Polarity</DisplayName>
+      <pValue>GPO_1_Polarity_Reg</pValue>
+    </Boolean>
+    <IntReg Name="GPO_1_Polarity_Reg">
+      <Address>0xE00C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="GPO_2_Mode">
+      <ToolTip>GPO_2_Mode</ToolTip>
+      <Description>GPO_2_Mode</Description>
+      <DisplayName>GPO 2 Mode</DisplayName>
+      <EnumEntry Name="Exposure">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="Readout">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="GPO">
+        <Value>2</Value>
+      </EnumEntry>
+      <EnumEntry Name="Test_Generator">
+        <Value>3</Value>
+      </EnumEntry>
+      <pValue>GPO_2_Mode_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPO_2_Mode_Reg">
+      <Address>0xE010</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="GPO_2_Polarity">
+      <ToolTip>Enables GPO Polarity</ToolTip>
+      <Description>Enables GPO Polarity.</Description>
+      <DisplayName>GPO 2 Polarity</DisplayName>
+      <pValue>GPO_2_Polarity_Reg</pValue>
+    </Boolean>
+    <IntReg Name="GPO_2_Polarity_Reg">
+      <Address>0xE014</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="GPO_3_Mode">
+      <ToolTip>GPO_3_Mode</ToolTip>
+      <Description>GPO_3_Mode</Description>
+      <DisplayName>GPO 3 Mode</DisplayName>
+      <EnumEntry Name="Exposure">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="Readout">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="GPO">
+        <Value>2</Value>
+      </EnumEntry>
+      <EnumEntry Name="Test_Gen_Uart_Txd">
+        <Value>3</Value>
+      </EnumEntry>
+      <pValue>GPO_3_Mode_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPO_3_Mode_Reg">
+      <Address>0xE018</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="GPO_3_Polarity">
+      <ToolTip>Enables GPO Polarity</ToolTip>
+      <Description>Enables GPO Polarity.</Description>
+      <DisplayName>GPO 3 Polarity</DisplayName>
+      <pValue>GPO_3_Polarity_Reg</pValue>
+    </Boolean>
+    <IntReg Name="GPO_3_Polarity_Reg">
+      <Address>0xE01C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="GPI_4_Polarity">
+      <ToolTip>Read GPI 4 Polarity</ToolTip>
+      <Description>Read GPI 4 Polarity</Description>
+      <DisplayName>GPI 4 Polarity</DisplayName>
+      <pValue>GPI_4_Polarity_Reg</pValue>
+    </Boolean>
+    <IntReg Name="GPI_4_Polarity_Reg">
+      <Address>0xE064</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <PollingTime>10</PollingTime>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="GPI_5_Polarity">
+      <ToolTip>Read GPI 5 Polarity</ToolTip>
+      <Description>Read GPI 5 Polarity</Description>
+      <DisplayName>GPI 5 Polarity</DisplayName>
+      <pValue>GPI_5_Polarity_Reg</pValue>
+    </Boolean>
+    <IntReg Name="GPI_5_Polarity_Reg">
+      <Address>0xE068</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <PollingTime>10</PollingTime>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="GPI_Start_Exp_Mode">
+      <ToolTip>GPI_Start_Exp_Mode</ToolTip>
+      <Description>GPI_Start_Exp_Mode</Description>
+      <DisplayName>GPI Start Exposure Mode</DisplayName>
+      <EnumEntry Name="GPI_4">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="GPI_5">
+        <Value>1</Value>
+      </EnumEntry>
+      <pValue>GPI_Start_Exp_Mode_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPI_Start_Exp_Mode_Reg">
+      <Address>0xE020</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="GPI_Start_Exp_Event">
+      <ToolTip>GPI_Start_Exp_Event</ToolTip>
+      <Description>GPI_Start_Exp_Event</Description>
+      <DisplayName>GPI Start Exposure Event</DisplayName>
+      <EnumEntry Name="Rising_Edge">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="Falling_Edge">
+        <Value>1</Value>
+      </EnumEntry>
+      <pValue>GPI_Start_Exp_Event_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPI_Start_Exp_Event_Reg">
+      <Address>0xE024</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="GPI_End_Exp_Mode">
+      <ToolTip>GPI_End_Exp_Mode</ToolTip>
+      <Description>GPI_End_Exp_Mode</Description>
+      <DisplayName>GPI End Exposure Mode</DisplayName>
+      <EnumEntry Name="GPI_4">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="GPI_5">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="Internal">
+        <Value>2</Value>
+      </EnumEntry>
+      <pValue>GPI_End_Exp_Mode_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPI_End_Exp_Mode_Reg">
+      <Address>0xE028</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="GPI_End_Exp_Event">
+      <ToolTip>GPI_End_Exp_Event</ToolTip>
+      <Description>GPI_End_Exp_Event</Description>
+      <DisplayName>GPI End Exposure Event</DisplayName>
+      <EnumEntry Name="Rising_Edge">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="Falling_Edge">
+        <Value>1</Value>
+      </EnumEntry>
+      <pValue>GPI_End_Exp_Event_Reg</pValue>
+    </Enumeration>
+    <IntReg Name="GPI_End_Exp_Event_Reg">
+      <Address>0xE02C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="GPI_4_Debounce_Count">
+      <ToolTip>Set GPI 4 Debounce Count.</ToolTip>
+      <Description>Set GPI 4 Debounce Count.</Description>
+      <DisplayName>GPI 4 Debounce Count</DisplayName>
+      <pValue>GPI_4_Debounce_Count_Reg</pValue>
+      <Min>0</Min>
+      <Max>65535</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="GPI_4_Debounce_Count_Reg">
+      <Address>0xE03C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="GPI_5_Debounce_Count">
+      <ToolTip>Set GPI 5 Debounce Count.</ToolTip>
+      <Description>Set GPI 5 Debounce Count.</Description>
+      <DisplayName>GPI 5 Debounce Count</DisplayName>
+      <pValue>GPI_5_Debounce_Count_Reg</pValue>
+      <Min>0</Min>
+      <Max>65535</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="GPI_5_Debounce_Count_Reg">
+      <Address>0xE040</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="Trigger_Delay">
+      <ToolTip>Trigger_Delay</ToolTip>
+      <Description>Trigger_Delay</Description>
+      <DisplayName>Trigger_Delay</DisplayName>
+      <pValue>Trigger_Delay_Reg</pValue>
+      <Min>0</Min>
+      <Max>1000</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="Trigger_Delay_Reg">
+      <Address>0xE038</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="TG_Frame_Time">
+      <ToolTip>TG_Frame_Time</ToolTip>
+      <Description>TG_Frame_Time</Description>
+      <DisplayName>TG_Frame_Time</DisplayName>
+      <pValue>TG_Frame_TimeReg</pValue>
+      <Min>2840</Min>
+      <Max>200000</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="TG_Frame_TimeReg">
+      <Address>0xE030</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="TG_High_Time">
+      <ToolTip>TG_High_Time</ToolTip>
+      <Description>TG_High_Time</Description>
+      <DisplayName>TG_High_Time</DisplayName>
+      <pValue>TG_High_TimeReg</pValue>
+      <Min>10</Min>
+      <Max>5000</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="TG_High_TimeReg">
+      <Address>0xE034</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Boolean Name="UartEnable">
+      <ToolTip>Enables Uart Using GPO_3 and GPI_5</ToolTip>
+      <Description>Enables Uart.</Description>
+      <DisplayName>UartEnable</DisplayName>
+      <pValue>UartEnableReg</pValue>
+    </Boolean>
+    <IntReg Name="UartEnableReg">
+      <Address>0xE044</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Enumeration Name="UartBaud">
+      <ToolTip>UartBaud</ToolTip>
+      <Description>UartBaud</Description>
+      <DisplayName>UartBaud</DisplayName>
+      <EnumEntry Name="B_9600">
+        <Value>0</Value>
+      </EnumEntry>
+      <EnumEntry Name="B_19200">
+        <Value>1</Value>
+      </EnumEntry>
+      <EnumEntry Name="B_38400">
+        <Value>2</Value>
+      </EnumEntry>
+      <EnumEntry Name="B_57600">
+        <Value>3</Value>
+      </EnumEntry>
+      <EnumEntry Name="B_115200">
+        <Value>4</Value>
+      </EnumEntry>
+      <pValue>UartBaudReg</pValue>
+    </Enumeration>
+    <IntReg Name="UartBaudReg">
+      <Address>0xE048</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="UartDataBits">
+      <ToolTip>UartDataBits</ToolTip>
+      <Description>UartDataBits</Description>
+      <DisplayName>UartDataBits</DisplayName>
+      <pValue>UartDataBitsReg</pValue>
+      <Min>5</Min>
+      <Max>8</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="UartDataBitsReg">
+      <Address>0xE04C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="UartStopBits">
+      <ToolTip>UartStopBits</ToolTip>
+      <Description>UartStopBits</Description>
+      <DisplayName>UartStopBits</DisplayName>
+      <pValue>UartStopBitsReg</pValue>
+      <Min>1</Min>
+      <Max>2</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="UartStopBitsReg">
+      <Address>0xE050</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="UartTxData">
+      <ToolTip>UartTxData</ToolTip>
+      <Description>UartTxData</Description>
+      <DisplayName>UartTxData</DisplayName>
+      <pValue>UartTxDataReg</pValue>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="UartTxDataReg">
+      <Address>0xE054</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="UartTxFifoCnt">
+      <ToolTip>UartTxFifoCnt</ToolTip>
+      <Description>UartTxFifoCnt</Description>
+      <DisplayName>UartTxFifoCnt</DisplayName>
+      <pValue>UartTxFifoCntReg</pValue>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="UartTxFifoCntReg">
+      <Address>0xE058</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <PollingTime>10</PollingTime>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="UartRxData">
+      <ToolTip>UartRxData</ToolTip>
+      <Description>UartRxData</Description>
+      <DisplayName>UartRxData</DisplayName>
+      <pValue>UartRxDataReg</pValue>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="UartRxDataReg">
+      <Address>0xE05C</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <PollingTime>10</PollingTime>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="UartRxFifoCnt">
+      <ToolTip>UartRxFifoCnt</ToolTip>
+      <Description>UartRxFifoCnt</Description>
+      <DisplayName>UartRxFifoCnt</DisplayName>
+      <pValue>UartRxFifoCntReg</pValue>
+      <Min>0</Min>
+      <Max>255</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="UartRxFifoCntReg">
+      <Address>0xE060</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <PollingTime>10</PollingTime>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+  </Group>
+  <!-- ******************************************* -->
+  <!-- ROOT SUB-CATEGORIES - DeviceInformation     -->
+  <!--                                             -->
+  <!-- ******************************************* -->
+  <Group Comment="DeviceInformation">
+    <StringReg Name="DeviceVendorName">
+      <ToolTip>DeviceVendorName</ToolTip>
+      <Description>DeviceVendorName</Description>
+      <DisplayName>DeviceVendorName</DisplayName>
+      <Address>0x0048</Address>
+      <Length>32</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+    </StringReg>
+    <StringReg Name="DeviceModelName">
+      <ToolTip>DeviceModelName</ToolTip>
+      <Description>DeviceModelName</Description>
+      <DisplayName>DeviceModelName</DisplayName>
+      <Address>0x0068</Address>
+      <Length>32</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+    </StringReg>
+    <StringReg Name="DeviceVersion">
+      <ToolTip>DeviceVersion</ToolTip>
+      <Description>DeviceVersion</Description>
+      <DisplayName>DeviceVersion</DisplayName>
+      <Address>0x0088</Address>
+      <Length>32</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+    </StringReg>
+    <StringReg Name="DeviceSerialNumber">
+      <ToolTip>DeviceSerialNumber</ToolTip>
+      <Description>DeviceSerialNumber</Description>
+      <DisplayName>DeviceSerialNumber</DisplayName>
+      <Address>0x00D8</Address>
+      <Length>16</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+    </StringReg>
+    <StringReg Name="DeviceFirmwareVersion">
+      <ToolTip>DeviceFirmwareVersion</ToolTip>
+      <Description>DeviceFirmwareVersion</Description>
+      <DisplayName>DeviceFirmwareVersion</DisplayName>
+      <Address>0xA014</Address>
+      <Length>32</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+    </StringReg>
+    <StringReg Name="DeviceUserName">
+      <ToolTip>DeviceUserName</ToolTip>
+      <Description>DeviceUserName</Description>
+      <DisplayName>DeviceUserName</DisplayName>
+      <Address>0x00E8</Address>
+      <Length>16</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+    </StringReg>
+    <Integer Name="SensTemp">
+      <ToolTip>SensTemp</ToolTip>
+      <Description>SensTemp</Description>
+      <DisplayName>SensTemp</DisplayName>
+      <pValue>SensTempReg</pValue>
+      <Min>0</Min>
+      <Max>127</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="SensTempReg">
+      <Address>0xF088</Address>
+      <Length>4</Length>
+      <AccessMode>RO</AccessMode>
+      <pPort>Device</pPort>
+      <Cachable>NoCache</Cachable>
+      <PollingTime>10</PollingTime>
+      <Sign>Signed</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Command Name="UserSetFlashUpdate">
+      <ToolTip>UserSetFlashUpdate</ToolTip>
+      <Description>UserSetFlashUpdate</Description>
+      <DisplayName>UserSetFlashUpdate</DisplayName>
+      <pValue>UserSetFlashUpdateReg</pValue>
+      <CommandValue>1</CommandValue>
+    </Command>
+    <IntReg Name="UserSetFlashUpdateReg">
+      <Address>0xF098</Address>
+      <Length>4</Length>
+      <AccessMode>WO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Integer Name="UserSet">
+      <ToolTip>UserSet</ToolTip>
+      <Description>UserSet</Description>
+      <DisplayName>UserSet</DisplayName>
+      <pValue>UserSetReg</pValue>
+      <Min>0</Min>
+      <Max>1</Max>
+      <Inc>1</Inc>
+      <Representation>Linear</Representation>
+    </Integer>
+    <IntReg Name="UserSetReg">
+      <Address>0xF09C</Address>
+      <Length>4</Length>
+      <AccessMode>RW</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>
+    <Command Name="UserSetSelFlashUpdate">
+      <ToolTip>UserSetSelFlashUpdate</ToolTip>
+      <Description>UserSetSelFlashUpdate</Description>
+      <DisplayName>UserSetSelFlashUpdate</DisplayName>
+      <pValue>UserSetSelFlashUpdateReg</pValue>
+      <CommandValue>1</CommandValue>
+    </Command>
+    <IntReg Name="UserSetSelFlashUpdateReg">
+      <Address>0xF0A0</Address>
+      <Length>4</Length>
+      <AccessMode>WO</AccessMode>
+      <pPort>Device</pPort>
+      <Sign>Unsigned</Sign>
+      <Endianess>BigEndian</Endianess>
+    </IntReg>    
+  </Group>
+</RegisterDescription>
