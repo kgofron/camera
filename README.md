@@ -1,4 +1,4 @@
-#Acquiring images from Axis 214 video camera
+# Acquiring images from Axis 214 video camera
 
 **Processing images using python, and ffmpeg (..)**
 
