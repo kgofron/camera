@@ -1,6 +1,9 @@
 
 # Restructured Text format .rst
-#Dependencies
+
+##Dependencies##
+
+``
 apt install pandac
 pip install restview
 
@@ -14,3 +17,4 @@ cd ..
 pandoc index.html -f html -t rst -o ADUVC/ADUVC.rst
 cd ADUVC
  ~/.local/bin/restview ADUVC.rst 
+```
