@@ -1,7 +1,7 @@
 
 # Restructured Text format .rst
 
-##Dependencies##
+**Dependencies**
 
 ```
 apt install pandac
