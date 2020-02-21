@@ -7,6 +7,18 @@ Host xf11id-ws1
   User kgofron
   ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
 
+Host xf11id-ws2
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf11idb-ioc1
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
+Host xf11idb-ioc2
+  User kgofron
+  ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
+
 Host xf10id-ws1
   User kgofron
   ProxyCommand ssh -q box64-3.nsls2.bnl.gov nc -q0 %h %p
@@ -70,3 +82,6 @@ Host 10.10.0.8
 Host 10.10.0.14
   User lambda
   ProxyCommand ssh kgofron@box64-3.nsls2.bnl.gov nc %h %p
+
+
+
