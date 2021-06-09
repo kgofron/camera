@@ -29,3 +29,8 @@ sudo tar -cf - epics | tar -xf - -C /IXS/kaz/backup/.
 tar -cf - 28id | ssh kgofron@xf28id1-ioc2 'tar -xf - -C /home/kgofron/.'
 ====
 ssh bcda1@mercury "tar -cf - /net/s100dserv/xorApps/zed" | gzip > zed.tar.gz
+====
+### Copy from remote 
+```
+ssh username@old 'tar czf - /home/username' | tar xvzf - -C /home/username 
+```
