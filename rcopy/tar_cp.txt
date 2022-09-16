@@ -35,3 +35,8 @@ ssh bcda1@mercury "tar -cf - /net/s100dserv/xorApps/zed" | gzip > zed.tar.gz
 ssh username@old 'tar czf - /home/username' | tar xvzf - -C /home/username 
 ssh kgofron@xf10id-ws1 'tar czf - /nsls2/users/kgofron/xf' | tar xvzf - -C /home/kaz/NSLS2/
 ```
+* IOC_backup
+```
+kgofron@xf11idb-ioc2:/epics$ tar cf - /epics | ssh kgofron@xf10id-ws3 'cd /eApps/backup/11id/xf11idb-ioc2 && tar xvf -'
+kgofron@xf10id-is1:/mnt/eApps$ tar cf - /eApps/backup/11id/xf11id-m3/  | tar xf -
+```
